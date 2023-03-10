@@ -2,7 +2,7 @@ import { Koast } from 'koast';
 import routers from './controller';
 
 async function main() {
-  const app = new Koast();
+  const app = new Koast({ proxy: true });
 
   app.useSwagger([routers])
   console.log('swagger address http://localhost:3000/swagger-ui/index.html')
