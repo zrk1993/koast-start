@@ -1,7 +1,6 @@
-import { joi, Use, Context, createParamDecorator, Controller, Description, Get, QuerySchame, Ctx, Query, Post, Body, BodySchame } from 'koast';
+import {  Controller, Get, Post, Use, Query, Body, Ctx, Context, Description, joi, QuerySchame, BodySchame } from 'koast';
 
-@Controller('')
-@Description('测试路由')
+@Controller()
 export default class Test {
   @Get()
   async hi(@Ctx() ctx: Context) {
